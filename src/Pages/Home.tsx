@@ -1,10 +1,17 @@
-import React from 'react'
-import Header from '../Components/Header'
+import React from 'react';
+import Header from '../Components/Header';
+import DataTable from '../Components/DataTable';
 
-const Home: React.FC = () => {
+type TypeDataTable = {
+    qtn: string
+}
+
+const Home: React.FC<TypeDataTable> = () => {
+
 	return (
 		<>
 			<Header />
+            <DataTable qtn="10" />
 		</>
 	)
 }
